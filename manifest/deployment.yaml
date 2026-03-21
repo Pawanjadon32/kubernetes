@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: useless
-          image: todo-add-tasks-api:v1
+          image: todo-delete-tasks-api:v1
           ports:
             - containerPort: 80
   strategy:
