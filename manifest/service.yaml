@@ -9,3 +9,15 @@ spec:
   - port: 80
     targetPort: 80
   type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: useless-v2-svc
+spec:
+  selector:
+    app: useless-v2
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP
