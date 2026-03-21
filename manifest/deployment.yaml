@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: useless
-          image: alok1408/fend:cp
+          image: pawanjadon/kabirepo:latest
           ports:
             - containerPort: 80
   strategy:
