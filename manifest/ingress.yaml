@@ -2,10 +2,9 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: nginx-ingress
-  # annotations:
-  #   kubernetes.io/ingress.class: azure/application-gateway
+  annotations:
+    kubernetes.io/ingress.class: azure/application-gateway
 spec:
-  ingressClassName: azure-application-gateway
   rules:
   - host: kabirpratap.sbs
     http:
@@ -15,5 +14,12 @@ spec:
         backend:
           service:
             name: useless-svc
+            port:
+              number: 80
+      - path: /v2
+        pathType: Prefix
+        backend:
+          service:
+            name: useless-v2-svc
             port:
               number: 80
