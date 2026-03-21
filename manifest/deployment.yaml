@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: useless
-          image: todo-get-tasks-api:v1
+          image: alok1408/fend:cp
           ports:
             - containerPort: 80
   strategy:
