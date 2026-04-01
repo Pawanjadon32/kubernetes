@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: useless-svc
-  namespace: kabir
+  namespace: dev
 spec:
   selector:
     app: useless
@@ -15,7 +15,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: useless-v2-svc
-  namespace: kabir
+  namespace: dev
 spec:
   selector:
     app: useless-v2
