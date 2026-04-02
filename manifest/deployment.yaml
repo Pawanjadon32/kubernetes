@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
         - name: useless-v2
-          image: pawanjadon/myapp:v1
+          image: pawanjadon/myapp:v2
           ports:
             - containerPort: 80
   strategy:
