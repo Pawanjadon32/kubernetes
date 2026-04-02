@@ -4,7 +4,7 @@ metadata:
   name: useless
   namespace: dev
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: useless
@@ -21,7 +21,7 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 2
+      maxSurge: 1
       maxUnavailable: 0
 ---
 apiVersion: apps/v1
@@ -30,7 +30,7 @@ metadata:
   name: useless-v2
   namespace: dev
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: useless-v2
@@ -47,5 +47,5 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 2
+      maxSurge: 1
       maxUnavailable: 0
